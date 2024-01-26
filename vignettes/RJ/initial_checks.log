@@ -1,0 +1,56 @@
+Initial check results: 
+
+SUCCESS: Submission has consistently named tex, bib, and R files
+WARNING: The archive contains hidden files which will be removed: .Rhistory
+SUCCESS: File and directory names are compliant.
+ERROR: Image(s) detected in the main directory: Rlogo-5.png.
+They should be placed in the figures/ folder.
+SUCCESS: No problematic file found
+SUCCESS: Possible motivation letter found: motivation-letter, motivation-letter.pdf
+SUCCESS: Article title formatted in title case.
+SUCCESS: Section titles formatted in sentence case.
+ERROR: Abstract should be plain text without package markups,
+mathmatic notations, citation, or other formattings.
+NOTE: A potential list of spelling to check: standardised, behaviour, analyse, socio, impactful, hydrometeorological, interpretable, standardisation, summarised, evapotranspiration, realisations, analysing, labelled, ccccccc, rescale, ccc, hypothesised, visualised, indicess, si, params, fitdist, rescaling, agg, visualise, xlims, ylims, characteristsics, occ, dur, rescaled, sei, standardising, durations, df, visualisation, analysed, probabilistically
+SUCCESS: CRAN activities have been detected for package SEI
+SUCCESS: No error with the use of \pkg markup.
+ERROR: 3 of 10 package(s) not available on CRAN: standard-precip, spei, climate-indices
+NOTE: 1 package(s) used in the text without \CRANpkg or \BIOpkg commands: standaRdized
+WARNING: Citation should include a link to the reference, preferably a
+DOI, unless online resources cannot be found.
+References without DOI or URL: HersbachEtAl2023, MckeeEtAl1993.
+SUCCESS: No customised csl file used. Good!
+ERROR: Please use a fixed article's date in the format of `%Y-%m-%d`,
+e.g. 2023-10-05. The date should match the date when the article
+is submitted. Dynamic date can cause issues on issue rendering.
+
+SUCCESS: 9 | NOTE: 2 | WARNING: 2 | ERROR: 4
+
+Initial check results: 
+
+SUCCESS: Submission has consistently named tex, bib, and R files
+WARNING: The archive contains hidden files which will be removed: .Rhistory
+SUCCESS: File and directory names are compliant.
+ERROR: Image(s) detected in the main directory: .
+They should be placed in the figures/ folder.
+SUCCESS: No problematic file found
+SUCCESS: Possible motivation letter found: motivation-letter, motivation-letter.pdf
+SUCCESS: Article title formatted in title case.
+SUCCESS: Section titles formatted in sentence case.
+ERROR: Abstract should be plain text without package markups,
+mathmatic notations, citation, or other formattings.
+NOTE: A potential list of spelling to check: standardised, behaviour, analyse, socio, impactful, hydrometeorological, interpretable, standardisation, summarised, evapotranspiration, realisations, analysing, labelled, ccccccc, rescale, ccc, hypothesised, visualised, indicess, si, params, fitdist, rescaling, agg, visualise, xlims, ylims, characteristsics, occ, dur, rescaled, sei, standardising, durations, df, visualisation, analysed, probabilistically
+SUCCESS: CRAN activities have been detected for package SEI
+SUCCESS: No error with the use of \pkg markup.
+ERROR: 3 of 10 package(s) not available on CRAN: standard-precip, spei, climate-indices
+NOTE: 1 package(s) used in the text without \CRANpkg or \BIOpkg commands: standaRdized
+WARNING: Citation should include a link to the reference, preferably a
+DOI, unless online resources cannot be found.
+References without DOI or URL: HersbachEtAl2023, MckeeEtAl1993.
+SUCCESS: No customised csl file used. Good!
+ERROR: Please use a fixed article's date in the format of `%Y-%m-%d`,
+e.g. 2023-10-05. The date should match the date when the article
+is submitted. Dynamic date can cause issues on issue rendering.
+
+SUCCESS: 9 | NOTE: 2 | WARNING: 2 | ERROR: 4
+

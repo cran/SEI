@@ -1,6 +1,6 @@
 Package: SEI
 Title: Calculating Standardised Indices
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
   c(person(given = "Sam", family = "Allen", email = "sam.allen@unibe.ch", role = c('aut','cre')),
   person(given = "Noelia", family = "Otero", email = "noeli1680@gmail.com", role=c('aut')))
@@ -14,10 +14,11 @@ Imports: ggplot2, xts, zoo, fitdistrplus
 Suggests: knitr, lubridate, dplyr, gridExtra, testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
+LazyData: true
 NeedsCompilation: no
-Packaged: 2023-11-14 08:19:59 UTC; sa20i493
+Packaged: 2024-01-26 15:59:17 UTC; sa20i493
 Author: Sam Allen [aut, cre],
   Noelia Otero [aut]
 Maintainer: Sam Allen <sam.allen@unibe.ch>
 Repository: CRAN
-Date/Publication: 2023-11-14 17:50:05 UTC
+Date/Publication: 2024-01-26 16:20:02 UTC
