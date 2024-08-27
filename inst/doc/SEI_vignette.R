@@ -32,6 +32,30 @@ plot_raw <- plot_sei(x, type = "hist", title = "Raw")
 plot_std <- plot_sei(x_std, type = "hist", title = "Standardised")
 grid.arrange(plot_raw, plot_std, nrow = 1)
 
+## ----nst_std_index_example----------------------------------------------------
+N <- 1000
+t <- seq(10, 20, length.out = N)
+x <- rnorm(N, mean = t, sd = exp(t/10))
+
+## ----nst_std_index_example2---------------------------------------------------
+preds <- data.frame(t = t)
+# standardised indices without trend
+si_st <- std_index(x, dist = "norm")
+# standardised indices with trend in mean
+si_nst <- std_index(x, dist = "norm", preds_new = preds)
+# standardised indices with trend in mean and sd
+si_nst2 <- std_index(x, dist = "norm", preds_new = preds, sigma.formula = ~ t)
+
+## ----nst_std_index_ex_plot, echo=FALSE, dev='pdf', fig.width=9, fig.height=3, fig.align="center", out.width = "\\linewidth"----
+plt_raw <- plot_sei(x, lab = "Values", title = "Raw time series")
+plt_st <- plot_sei(si_st, ylims = c(-4, 4), title = "Without trend")
+plt_nst <- plot_sei(si_nst, ylims = c(-4, 4), title = "Trend in mean")
+plt_nst2 <- plot_sei(si_nst2, ylims = c(-4, 4), title = "Trend in mean and sd")
+grid.arrange(plt_st, plt_nst, plt_nst2, nrow = 1)
+
+## ----get_drought_example------------------------------------------------------
+head(get_drought(x_std))
+
 ## ----load_supply_data---------------------------------------------------------
 data("data_supply", package = "SEI")
 head(data_supply)
@@ -75,12 +99,12 @@ plot_ind <- plot_sei(srepi_d, type = "hist", lab = "SREPI")
 grid.arrange(plot_raw, plot_ind, nrow = 1)
 
 ## ----plot_dist_unif, dev='pdf', fig.width=9, fig.height=3, fig.align="center", out.width = "\\linewidth"----
-srepi_d_prob <- std_index(de_supply_d, index_type = "probability")
-plot_prob <- plot_sei(srepi_d_prob, type = "hist", lab = "SREPI",
-                      ylims = c(0, 2), title = "Probability")
-srepi_d_bnd <- std_index(de_supply_d, index_type = "bounded")
-plot_bnd <- plot_sei(srepi_d_bnd, type = "hist", lab = "SREPI",
-                     ylims = c(0, 1), title = "Bounded")
+srepi_d_prob <- std_index(de_supply_d, index_type = "prob01")
+plot_prob <- plot_sei(srepi_d_prob, type = "bar", lab = "SREPI",
+                      ylims = c(0, 0.1), title = "Probability")
+srepi_d_bnd <- std_index(de_supply_d, index_type = "prob11")
+plot_bnd <- plot_sei(srepi_d_bnd, type = "bar", lab = "SREPI",
+                     ylims = c(0, 0.1), title = "Bounded")
 grid.arrange(plot_prob, plot_bnd, nrow = 1)
 
 ## ----define_droughts----------------------------------------------------------
@@ -122,16 +146,16 @@ out_lnorm <- fit_dist(data_wind_de$wsmean, dist = "lnorm")
 out_weibull <- fit_dist(data_wind_de$wsmean, dist = "weibull")
 
 ## ----aic----------------------------------------------------------------------
-aic_vec <- c(out_gamma$fit_props['aic'],
-             out_lnorm$fit_props['aic'],
-             out_weibull$fit_props['aic'])
+aic_vec <- c(out_gamma$fit['aic'],
+             out_lnorm$fit['aic'],
+             out_weibull$fit['aic'])
 names(aic_vec) <- c("Gamma", "Log-normal", "Weibull")
 print(aic_vec)
 
 ## ----ksp----------------------------------------------------------------------
-ksp_vec <- c(out_gamma$fit_props['ks_pval'],
-             out_lnorm$fit_props['ks_pval'],
-             out_weibull$fit_props['ks_pval'])
+ksp_vec <- c(out_gamma$fit['ks_pval'],
+             out_lnorm$fit['ks_pval'],
+             out_weibull$fit['ks_pval'])
 names(ksp_vec) <- c("Gamma", "Log-normal", "Weibull")
 print(round(ksp_vec, 4))
 

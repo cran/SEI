@@ -13,14 +13,24 @@ library(gridExtra)
 
 ## -----------------------------------------------------------------------------
 table_data <- matrix(c(
-  "Normal", 1.28, 1.64, 1.96, -1.28, -1.64, -1.96,
-  "Probability", 0.9, 0.95, 0.975, 0.1, 0.05, 0.025,
-  "Bounded", 0.8, 0.9, 0.95, -0.8, -0.9, -0.95
+  "Normal (`normal`)", -1.96, -1.64, -1.28, 1.28, 1.64, 1.96,
+  "Probability (`prob01`)", 0.025, 0.05, 0.1, 0.9, 0.95, 0.975,
+  "Bounded (`prob11`)", -0.95, -0.9, -0.9, 0.8, 0.9, 0.95
 ), ncol = 7, byrow = TRUE)
 
-knitr::kable(table_data, format = "simple", align = "c",
-             col.names = c("Index Type", "Moderate", "Severe", "Extreme", "Moderate", "Severe", "Extreme"),
-             caption = "Possible thresholds used to define droughts when using each of the three types of standardised indices. Values are shown for droughts defined when the threshold is exceeded (left), and fallen below (right).")
+format <- knitr::asis_output(ifelse(knitr::is_html_output(), "html", "latex"))
+
+if (format == "html") {
+  knitr::kable(table_data, format = format, align = "c",
+             col.names = c("Index Type", "Extreme", "Severe", "Moderate", "Moderate", "Severe", "Extreme"),
+             caption = "Possible thresholds used to define droughts when using each of the three types of standardised indices. Values are shown for droughts defined when the index falls below and exceeds the threshold.") %>%
+  kableExtra::add_header_above(c(" " = 1, "Fall below" = 3, "Exceed" = 3))
+} else {
+  knitr::kable(table_data, format = "simple", align = "c",
+             col.names = c("Index Type", "Extreme", "Severe", "Moderate", "Moderate", "Severe", "Extreme"),
+             caption = "Possible thresholds used to define droughts when using each of the three types of standardised indices. Values are shown for droughts defined when the index falls below (left) and exceeds (right) the threshold.")
+}
+
 
 
 ## -----------------------------------------------------------------------------
@@ -46,10 +56,38 @@ x <- rgamma(1000, shape = 2, scale = 1)
 x_std <- std_index(x)
 
 
-## ----echo = TRUE, fig.height = 9, fig.height = 3, fig.align = "center", out.width = "\\linewidth", fig.cap="Histogram of values sampled from a gamma distribution, and corresponding standardised values."----
+## ----echo = TRUE, fig.width = 9, fig.height = 3, fig.align = "center", out.width = "\\linewidth", fig.cap="Histogram of values sampled from a gamma distribution, and corresponding standardised values."----
 plot_raw <- plot_sei(x, type = "hist", title = "Raw")
 plot_std <- plot_sei(x_std, type = "hist", title = "Standardised")
 grid.arrange(plot_raw, plot_std, nrow = 1)
+
+
+## ----nst_std_index_example, echo = TRUE---------------------------------------
+N <- 1000
+t <- seq(10, 20, length.out = N)
+x <- rnorm(N, mean = t, sd = exp(t/10))
+
+
+## ----nst_std_index_example2, echo = TRUE--------------------------------------
+preds <- data.frame(t = t)
+# standardised indices without trend
+si_st <- std_index(x, dist = "norm")
+# standardised indices with trend in mean
+si_nst <- std_index(x, dist = "norm", preds_new = preds)
+# standardised indices with trend in mean and sd
+si_nst2 <- std_index(x, dist = "norm", preds_new = preds, sigma.formula = ~ t)
+
+
+## ----echo = FALSE, fig.width = 9, fig.height = 3, fig.align = "center", out.width = "\\linewidth", fig.cap="Standardised indices corresponding to a time series of values drawn from a non-stationary normal distribution. Results are shown when the estimated normal distribution does and does not include a trend."----
+plt_raw <- plot_sei(x, lab = "Values", title = "Raw time series")
+plt_st <- plot_sei(si_st, ylims = c(-4, 4), title = "Without trend")
+plt_nst <- plot_sei(si_nst, ylims = c(-4, 4), title = "Trend in mean")
+plt_nst2 <- plot_sei(si_nst2, ylims = c(-4, 4), title = "Trend in mean and sd")
+grid.arrange(plt_st, plt_nst, plt_nst2, nrow = 1)
+
+
+## ----get_drought_example, echo = TRUE-----------------------------------------
+head(get_drought(x_std))
 
 
 ## ----load_supply_data, echo=TRUE----------------------------------------------
@@ -103,12 +141,12 @@ grid.arrange(plot_raw, plot_ind, nrow = 1)
 
 
 ## ----fig.width=9, fig.height=3, fig.align="center", out.width = "\\linewidth", fig.cap="Histogram of 2019 daily renewable energy production and SREPI values in Germany, where the indices are probability and bounded indices."----
-srepi_d_prob <- std_index(de_supply_d, index_type = "probability")
-plot_prob <- plot_sei(srepi_d_prob, type = "hist", lab = "SREPI",
-                      ylims = c(0, 2), title = "Probability")
-srepi_d_bnd <- std_index(de_supply_d, index_type = "bounded")
-plot_bnd <- plot_sei(srepi_d_bnd, type = "hist", lab = "SREPI",
-                     ylims = c(0, 1), title = "Bounded")
+srepi_d_prob <- std_index(de_supply_d, index_type = "prob01")
+plot_prob <- plot_sei(srepi_d_prob, type = "bar", lab = "SREPI",
+                      xlims = c(0, 1), ylims = c(0, 0.1), title = "Probability")
+srepi_d_bnd <- std_index(de_supply_d, index_type = "prob11")
+plot_bnd <- plot_sei(srepi_d_bnd, type = "bar", lab = "SREPI",
+                     xlims = c(-1, 1), ylims = c(0, 0.1), title = "Bounded")
 grid.arrange(plot_prob, plot_bnd, nrow = 1)
 
 
@@ -159,17 +197,17 @@ out_weibull <- fit_dist(data_wind_de$wsmean, dist = "weibull")
 
 
 ## ----aic, echo=TRUE-----------------------------------------------------------
-aic_vec <- c(out_gamma$fit_props['aic'],
-             out_lnorm$fit_props['aic'],
-             out_weibull$fit_props['aic'])
+aic_vec <- c(out_gamma$fit['aic'],
+             out_lnorm$fit['aic'],
+             out_weibull$fit['aic'])
 names(aic_vec) <- c("Gamma", "Log-normal", "Weibull")
 print(aic_vec)
 
 
 ## ----ksp, echo=TRUE-----------------------------------------------------------
-ksp_vec <- c(out_gamma$fit_props['ks_pval'],
-             out_lnorm$fit_props['ks_pval'],
-             out_weibull$fit_props['ks_pval'])
+ksp_vec <- c(out_gamma$fit['ks_pval'],
+             out_lnorm$fit['ks_pval'],
+             out_weibull$fit['ks_pval'])
 names(ksp_vec) <- c("Gamma", "Log-normal", "Weibull")
 print(round(ksp_vec, 4))
 
@@ -202,13 +240,31 @@ sei_ws_weib <- std_index(de_wind_d, dist = "weibull")
 
 
 ## ----fig.width=9, fig.height=3, fig.align="center", out.width = "\\linewidth", fig.cap="Distribution of standardised wind speed indices (SWSI) constructed using the gamma, log-normal, and Weibull distributions. The standard normal density is displayed in blue."----
-x <- seq(-3.5, 3.5, length.out = length(sei_ws_gam))
+z <- seq(-3.5, 3.5, length.out = length(sei_ws_gam))
 xlab <- "SWSI"
-plt_gam <- plot_sei(sei_ws_gam, type = "hist", lab = xlab, title = "Gamma") +
-  geom_line(aes(x = x, y = dnorm(x)), col = "blue")
-plt_lnorm <- plot_sei(sei_ws_lnorm, type = "hist", lab = xlab, title = "Log-normal") +
-  geom_line(aes(x = x, y = dnorm(x)), col = "blue")
-plt_weib <- plot_sei(sei_ws_weib, type = "hist", lab = xlab, title = "Weibull") +
-  geom_line(aes(x = x, y = dnorm(x)), col = "blue")
+plt_gam <- plot_sei(sei_ws_gam, type = "hist", lab = xlab, xlims = range(z), title = "Gamma") +
+  geom_line(aes(x = z, y = dnorm(z)), col = "blue")
+plt_lnorm <- plot_sei(sei_ws_lnorm, type = "hist", lab = xlab, xlims = range(z), title = "Log-normal") +
+  geom_line(aes(x = z, y = dnorm(z)), col = "blue")
+plt_weib <- plot_sei(sei_ws_weib, type = "hist", lab = xlab, xlims = range(z), title = "Weibull") +
+  geom_line(aes(x = z, y = dnorm(z)), col = "blue")
+grid.arrange(plt_gam, plt_lnorm, plt_weib, nrow = 1)
+
+
+## ----fig.width=9, fig.height=3, fig.align="center", out.width = "\\linewidth", fig.cap="Normal quantile-quantile (qq) plots showing the fit of the standard normal distribution to the distribution of SWSI values."----
+
+plot_qq <- function(x, lims = c(-3.7, 3.7), title = NULL) {
+  ggplot(data.frame(x = x)) + geom_qq(aes(sample = x)) +
+  geom_abline(aes(intercept = 0, slope = 1), linetype = "dotted") +
+  scale_x_continuous(name = "Normal quantiles", limits = lims) +
+  scale_y_continuous(name = "SWSI quantiles", limits = lims) +
+  theme_bw() + 
+  theme(panel.grid = element_blank()) +
+  ggtitle(title)
+}
+
+plt_gam <- plot_qq(sei_ws_gam, title = "Gamma")
+plt_lnorm <- plot_qq(sei_ws_lnorm, title = "Log-normal")
+plt_weib <- plot_qq(sei_ws_weib, title = "Weibull")
 grid.arrange(plt_gam, plt_lnorm, plt_weib, nrow = 1)
 

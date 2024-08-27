@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  26 JAN 2024 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  25 JUL 2024 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1000,27 +1000,27 @@ tex.map}
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 3
-7.
+4.
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-37.
+34.
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-37.
+34.
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-37.
+34.
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-37.
+34.
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1029,190 +1029,213 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 37.
+(Font)              scaled to size 9.37807pt on input line 34.
 
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 37.
+(Font)              scaled to size 7.29405pt on input line 34.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 37.
+(Font)              scaled to size 5.21004pt on input line 34.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 37.
+(Font)              scaled to size 9.37807pt on input line 34.
 
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 37.
+(Font)              scaled to size 7.29405pt on input line 34.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 37.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5
-0.
+(Font)              scaled to size 5.21004pt on input line 34.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
+7.
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [2] [3]
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 12
-6.
+) [2]
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 88
+.
 
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/inconsolata\t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.18004pt on input line 126.
+(Font)              scaled to size 9.18004pt on input line 88.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Overfull \hbox (17.20015pt too wide) in paragraph at lines 147--148
-[]\T1/ppl/m/n/9 (-20) The fit of the dis-tri-bu-tion could also be vi-su-alised
- graph-i-cally by plot-ting the PIT val-ues $[]\OT1/zplm/m/n/9 (\OML/zplm/m/it/
-9 x[]\OT1/zplm/m/n/9 )\OT1/ppl/m/n/9 (-20) , [] , []\OT1/zplm/m/n/9 (\OML/zplm/
-m/it/9 x[]\OT1/zplm/m/n/9 )$
- []
-
-[4]
-<allen-otero_files/figure-latex/unnamed-chunk-3-1.pdf, id=207, 459.7175pt x 207
+[3] [4] [5]
+<allen-otero_files/figure-latex/unnamed-chunk-3-1.pdf, id=274, 640.3925pt x 207
 .77625pt>
 File: allen-otero_files/figure-latex/unnamed-chunk-3-1.pdf Graphic file (type p
 df)
 <use allen-otero_files/figure-latex/unnamed-chunk-3-1.pdf>
 Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-3-1.pdf  
-used on input line 193.
-(pdftex.def)             Requested size: 398.33858pt x 180.04417pt.
-[5 <./allen-otero_files/figure-latex/unnamed-chunk-3-1.pdf>]
-Overfull \hbox (2.34163pt too wide) in paragraph at lines 204--205
+used on input line 215.
+(pdftex.def)             Requested size: 398.33858pt x 129.2416pt.
+[6 <./allen-otero_files/figure-latex/unnamed-chunk-3-1.pdf>]
+Overfull \hbox (2.34163pt too wide) in paragraph at lines 228--229
 []\T1/ppl/m/n/9 (-20) The dis-tri-bu-tion fit-ting is per-formed us-ing \T1/zi4
 /m/n/9 fit_dist()\T1/ppl/m/n/9 (-20) , which is es-sen-tially a wrap-per for \T
 1/zi4/m/n/9 fitdist()
  []
 
-[6] [7]
-<allen-otero_files/figure-latex/unnamed-chunk-4-1.pdf, id=249, 643.40375pt x 20
-4.765pt>
+<allen-otero_files/figure-latex/unnamed-chunk-4-1.pdf, id=293, 648.4225pt x 207
+.77625pt>
 File: allen-otero_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type p
 df)
 <use allen-otero_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-4-1.pdf  
-used on input line 317.
-(pdftex.def)             Requested size: 398.33858pt x 126.77487pt.
-[8 <./allen-otero_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<allen-otero_files/figure-latex/unnamed-chunk-5-1.pdf, id=268, 640.3925pt x 204
-.765pt>
+used on input line 258.
+(pdftex.def)             Requested size: 398.33858pt x 127.6437pt.
+[7] [8 <./allen-otero_files/figure-latex/unnamed-chunk-4-1.pdf>] [9] [10]
+<allen-otero_files/figure-latex/unnamed-chunk-5-1.pdf, id=345, 643.40375pt x 20
+4.765pt>
 File: allen-otero_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type p
 df)
 <use allen-otero_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-5-1.pdf  
-used on input line 345.
-(pdftex.def)             Requested size: 398.33858pt x 127.36853pt.
-<allen-otero_files/figure-latex/unnamed-chunk-6-1.pdf, id=269, 640.3925pt x 207
-.77625pt>
+used on input line 411.
+(pdftex.def)             Requested size: 398.33858pt x 126.77487pt.
+[11 <./allen-otero_files/figure-latex/unnamed-chunk-5-1.pdf>]
+<allen-otero_files/figure-latex/unnamed-chunk-6-1.pdf, id=364, 640.3925pt x 204
+.765pt>
 File: allen-otero_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type p
 df)
 <use allen-otero_files/figure-latex/unnamed-chunk-6-1.pdf>
 Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-6-1.pdf  
-used on input line 369.
-(pdftex.def)             Requested size: 398.33858pt x 129.2416pt.
-<allen-otero_files/figure-latex/unnamed-chunk-7-1.pdf, id=270, 640.3925pt x 204
-.765pt>
+used on input line 439.
+(pdftex.def)             Requested size: 398.33858pt x 127.36853pt.
+<allen-otero_files/figure-latex/unnamed-chunk-7-1.pdf, id=365, 640.3925pt x 207
+.77625pt>
 File: allen-otero_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type p
 df)
 <use allen-otero_files/figure-latex/unnamed-chunk-7-1.pdf>
 Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-7-1.pdf  
-used on input line 378.
+used on input line 463.
+(pdftex.def)             Requested size: 398.33858pt x 129.2416pt.
+<allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf, id=366, 640.3925pt x 204
+.765pt>
+File: allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type p
+df)
+<use allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf>
+Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf  
+used on input line 472.
 (pdftex.def)             Requested size: 398.33858pt x 127.36853pt.
-[9 <./allen-otero_files/figure-latex/unnamed-chunk-5-1.pdf>]
-Overfull \hbox (11.36613pt too wide) in paragraph at lines 427--428
+[12 <./allen-otero_files/figure-latex/unnamed-chunk-6-1.pdf>]
+Overfull \hbox (11.36613pt too wide) in paragraph at lines 521--522
 []\T1/ppl/m/n/9 (-20) These are just sim-ple ex-am-ples of anal-y-ses that coul
 d be per-formed us-ing the out-put of \T1/zi4/m/n/9 get_drought()\T1/ppl/m/n/9 
 (-20) .
  []
 
-[10 <./allen-otero_files/figure-latex/unnamed-chunk-6-1.pdf> <./allen-otero_fil
-es/figure-latex/unnamed-chunk-7-1.pdf>]
-<allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf, id=324, 643.40375pt x 20
+[13 <./allen-otero_files/figure-latex/unnamed-chunk-7-1.pdf> <./allen-otero_fil
+es/figure-latex/unnamed-chunk-8-1.pdf>]
+<allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf, id=421, 643.40375pt x 20
 4.765pt>
-File: allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type p
+File: allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type p
 df)
-<use allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf>
-Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf  
-used on input line 464.
+<use allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf>
+Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf  
+used on input line 558.
 (pdftex.def)             Requested size: 398.33858pt x 126.77487pt.
-[11 <./allen-otero_files/figure-latex/unnamed-chunk-8-1.pdf>]
-Overfull \hbox (0.63794pt too wide) in paragraph at lines 481--482
+
+Overfull \hbox (0.63794pt too wide) in paragraph at lines 575--576
 []\T1/ppl/m/n/9 (-20) The three dis-tri-bu-tions can be com-pared with re-spect
  to their AIC, which is out-put from \T1/zi4/m/n/9 fit_dist()\T1/ppl/m/n/9 (-20
 ) . 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 4
-89.
+LaTeX Font Info:    Trying to load font information for TS1+zi4 on input line 5
+83.
 
 (C:\Users\sa20i493\AppData\Local\Programs\MiKTeX\tex/latex/inconsolata\ts1zi4.f
 d
 File: ts1zi4.fd 2018/01/14 TS1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `TS1/zi4/m/n' will be
-(Font)              scaled to size 9.18004pt on input line 489.
+(Font)              scaled to size 9.18004pt on input line 583.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zi4' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf, id=344, 641.39626pt x 20
-7.77625pt>
-File: allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf Graphic file (type p
-df)
-<use allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf>
-Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf  
-used on input line 528.
-(pdftex.def)             Requested size: 398.33858pt x 129.04185pt.
-[12 <./allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf>]
-<allen-otero_files/figure-latex/unnamed-chunk-10-1.pdf, id=361, 640.3925pt x 20
-4.765pt>
+[14 <./allen-otero_files/figure-latex/unnamed-chunk-9-1.pdf>]
+<allen-otero_files/figure-latex/unnamed-chunk-10-1.pdf, id=441, 641.39626pt x 2
+07.77625pt>
 File: allen-otero_files/figure-latex/unnamed-chunk-10-1.pdf Graphic file (type 
 pdf)
 <use allen-otero_files/figure-latex/unnamed-chunk-10-1.pdf>
 Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-10-1.pdf 
- used on input line 547.
+ used on input line 622.
+(pdftex.def)             Requested size: 398.33858pt x 129.04185pt.
+[15 <./allen-otero_files/figure-latex/unnamed-chunk-10-1.pdf>]
+<allen-otero_files/figure-latex/unnamed-chunk-11-1.pdf, id=458, 640.3925pt x 20
+4.765pt>
+File: allen-otero_files/figure-latex/unnamed-chunk-11-1.pdf Graphic file (type 
+pdf)
+<use allen-otero_files/figure-latex/unnamed-chunk-11-1.pdf>
+Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-11-1.pdf 
+ used on input line 641.
 (pdftex.def)             Requested size: 398.33858pt x 127.36853pt.
-[13 <./allen-otero_files/figure-latex/unnamed-chunk-10-1.pdf>] (RJwrapper.bbl (
-RJwrapper.brf)
+<allen-otero_files/figure-latex/unnamed-chunk-12-1.pdf, id=463, 644.4075pt x 20
+7.77625pt>
+File: allen-otero_files/figure-latex/unnamed-chunk-12-1.pdf Graphic file (type 
+pdf)
+<use allen-otero_files/figure-latex/unnamed-chunk-12-1.pdf>
+Package pdftex.def Info: allen-otero_files/figure-latex/unnamed-chunk-12-1.pdf 
+ used on input line 652.
+(pdftex.def)             Requested size: 398.33858pt x 128.43948pt.
+[16 <./allen-otero_files/figure-latex/unnamed-chunk-11-1.pdf> <./allen-otero_fi
+les/figure-latex/unnamed-chunk-12-1.pdf>] [17]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (6.29926pt too wide) in paragraph at lines 717--719
+\T1/ppl/m/n/9 (-20) and the nor-mal in-dices at the cen-sored val-ues should th
+ere-fore be re-placed with $\OT1/zplm/m/n/9 ^^H[](\OML/zplm/m/it/9 c\OT1/zplm/m
+/n/9 ) = \OMS/zplm/m/n/9 ^^@\OML/zplm/m/it/9 ^^^\OT1/zplm/m/n/9 (\OML/zplm/m/it
+/9 l\OT1/zplm/m/n/9 )/\OT1/cmss/m/n/9 P\OT1/zplm/m/n/9 (\OML/zplm/m/it/9 X \OT1
+/zplm/m/n/9 =
+ []
+
+[18] (RJwrapper.bbl (RJwrapper.brf)
 \tf@brf=\write6
 \openout6 = `RJwrapper.brf'.
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 37--37
+Underfull \hbox (badness 1852) in paragraph at lines 45--45
 []\T1/ppl/m/n/9 (+20) S. Be-guería and S. M. Vicente-Serrano.  \T1/ppl/b/n/9 (+
 20) SPEI\T1/ppl/m/it/9 (+20) : Cal-cu-la-tion of the Stan-dard-ized Precipitati
 on-
  []
 
-[14])
+[19] [20])
 
 LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
-(Font)              using `T1/zi4/m/n' instead on input line 584.
+(Font)              using `T1/zi4/m/n' instead on input line 742.
 
 LaTeX Font Info:    Font shape `T1/zi4/m/it' will be
-(Font)              scaled to size 9.18004pt on input line 594.
-) [15] (RJwrapper.aux)
+(Font)              scaled to size 9.18004pt on input line 752.
+) [21] (RJwrapper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `RJwrapper.out' has not changed.
-(rerunfilecheck)             Checksum: 326C7154F78339D7E8523507D2EE8780;2228.
+(rerunfilecheck)             Checksum: 16D1358EA6ECC848D0BC629680851258;3764.
 Package rerunfilecheck Info: File `RJwrapper.brf' has not changed.
-(rerunfilecheck)             Checksum: 2FF45DFDB7318579A383FF40DE3B66E6;2370.
+(rerunfilecheck)             Checksum: B11D51CF12F25E8FA4AD076E0B4BCC3D;3453.
  ) 
 Here is how much of TeX's memory you used:
- 27396 strings out of 475385
- 508307 string characters out of 2775490
- 850437 words of memory out of 3000000
- 47862 multiletter control sequences out of 15000+600000
- 512738 words of font info for 289 fonts, out of 8000000 for 9000
+ 27554 strings out of 475385
+ 511825 string characters out of 2775490
+ 853968 words of memory out of 3000000
+ 47971 multiletter control sequences out of 15000+600000
+ 514496 words of font info for 304 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,11n,131p,1113b,786s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 115i,12n,131p,1661b,853s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconsolata/
 i4-ts1.enc}{C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inc
 onsolata/i4-t1-0.enc}{C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/enc
@@ -1222,14 +1245,16 @@ ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/sa20i493/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/sa20
 i493/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 /Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/type1/public/ma
-thpazo/fplmr.pfb><C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/type1/u
-rw/palatino/uplb8a.pfb><C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/urw/palatino/uplr8a.pfb><C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/f
-onts/type1/urw/palatino/uplri8a.pfb>
-Output written on RJwrapper.pdf (15 pages, 579751 bytes).
+ss9.pfb><C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/mathpazo/fplmr.pfb><C:/Users/sa20i493/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/mathpazo/fplmri.pfb><C:/Users/sa20i493/AppData/Local/Programs/
+MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/sa20i493/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/sa20i493/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on RJwrapper.pdf (21 pages, 861466 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 55973 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 682 PDF objects out of 1000 (max. 8388607)
+ 98 named destinations out of 1000 (max. 500000)
+ 57583 words of extra memory for PDF output out of 61914 (max. 10000000)
 
